@@ -1,24 +1,37 @@
-import React, { useState } from "react";
-import Login from './Login';
+import React, { useState } from 'react';
 
+function Login() {
+  const [showForgotPassword, setShowForgotPassword] = useState(false);
 
-function Home() {
-    const [showLogin, setShowLogin] = useState(false);
-    return (
+  const handleForgotPasswordClose = () => {
+    setShowForgotPassword(false);
+  };
+
+  return (
+    <div>
+      <h1>Login</h1>
+      <form>
         <div>
-            <h1>Knuckles's Fish Gallery</h1>
-            <button onClick={() => setShowLogin(true)}>Login</button>
+          <input type="text" name="username" placeholder="Username" />
+        </div>
+        <div>
+          <input type="password" name="password" placeholder="Password" />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
 
-      {showLogin && (
-        <div className="login-popup">
-          <div className="login-content">
-            <button onClick={() => setShowLogin(false)}>Close</button>
-            <Login />
+      <button onClick={() => setShowForgotPassword(true)}>Forgot Password</button>
+
+      {showForgotPassword && (
+        <div className="forgot-password-popup">
+          <div className="forgot-password-content">
+            <button onClick={handleForgotPasswordClose}>Close</button>
+            <p>Relax &amp; try to remember your password</p>
           </div>
         </div>
       )}
-        </div>
-    )
-};
+    </div>
+  );
+}
 
-export default Home;
+export default Login;
