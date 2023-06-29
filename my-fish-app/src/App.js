@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 import FishGallery from './FishGallery';
 import Home from './Home';
 import NavBar from './NavBar';
@@ -26,18 +27,21 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <NavBar />
+          <div>
+            <NavBar />
+            <Switch>
+              <Route exact path="/">
+                <Home /> 
+              </Route>
+              <Route path="/fish-gallery">
+                <FishGallery fishData={fishes} handleLike={handleLike} />
+              </Route>
+              <Route path="/tank-calculator">
+                <TankCalculator /> 
+              </Route>
+            </Switch>
+          </div>
         </header>
-        <div>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route
-              path="/fish-gallery"
-              render={() => <FishGallery fishData={fishes} handleLike={handleLike} />}
-            />
-            <Route path="/tank-calculator" component={TankCalculator} />
-          </Switch>
-        </div>
       </div>
   );
 }
