@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 
 function Home() {
     return (
-        <div></div>
+        <div>
+            <h1>Knuckles's Fish Gallery</h1>
+        </div>
     )
 };
 
