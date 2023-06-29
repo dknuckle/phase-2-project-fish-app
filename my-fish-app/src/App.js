@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import FishGallery from './FishGallery';
 import Home from './Home';
 import NavBar from './NavBar';
