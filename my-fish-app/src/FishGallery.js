@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 
 
-function FishGallery () {
+function FishGallery() {
     return (
         <div></div>
     )
