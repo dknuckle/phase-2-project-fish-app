@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React, { useState } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import FishGallery from './FishGallery';
 import Home from './Home';
 import NavBar from './NavBar';
@@ -21,15 +21,26 @@ function App() {
       })
     );
   };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      <div>
-        <FishGallery fishData={fishes} handleLike={handleLike} />
+    <BrowserRouter>
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <NavBar />
+        </header>
+        <div>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route
+              path="/fish-gallery"
+              render={() => <FishGallery fishData={fishes} handleLike={handleLike} />}
+            />
+            <Route path="/tank-calculator" component={TankCalculator} />
+          </Switch>
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
