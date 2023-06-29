@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import FishGallery from './FishGallery';
 import Home from './Home';
 import NavBar from './NavBar';
@@ -23,7 +23,6 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -40,7 +39,6 @@ function App() {
           </Switch>
         </div>
       </div>
-    </BrowserRouter>
   );
 }
 
