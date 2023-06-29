@@ -1,0 +1,34 @@
+{
+    "fish": [
+      {
+        "id": 1,
+        "name": "square tank",
+        "image": "pending",
+        "likes": 1
+      },
+      {
+        "id": 2,
+        "name": "long tank",
+        "image": "pending",
+        "likes": 1
+      },
+      {
+        "id": 3,
+        "name": "corner tank",
+        "image": "pending",
+        "likes": 1
+      },
+      {
+        "id": 4,
+        "name": "nano saltwater tank",
+        "image": "pending",
+        "likes": 1
+      },
+      {
+        "id": 5,
+        "name": "pond",
+        "image": "pending",
+        "likes": 1
+      }
+    ]
+  }
