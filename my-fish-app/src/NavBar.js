@@ -1,17 +1,18 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const NavBar = ({ handleNavClick }) => {
+const NavBar = () => {
   return (
     <nav>
       <ul>
         <li>
-          <button onClick={() => handleNavClick('home')}>Home</button>
+          <NavLink exact to="/">Home</NavLink>
         </li>
         <li>
-          <button onClick={() => handleNavClick('fishGallery')}>Fish Gallery</button>
+          <NavLink to="/fish-gallery">Fish Gallery</NavLink>
         </li>
         <li>
-          <button onClick={() => handleNavClick('tankCalculator')}>Tank Calculator</button>
+          <NavLink to="/tank-calculator">Tank Calculator</NavLink>
         </li>
       </ul>
     </nav>
