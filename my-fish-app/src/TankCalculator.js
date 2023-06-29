@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 
 const TankCalculator = () => {
+  const [shape, setShape] = useState('rectangular');
   const [length, setLength] = useState('');
   const [width, setWidth] = useState('');
   const [height, setHeight] = useState('');
   const [gallons, setGallons] = useState(0);
+
+  const handleShapeChange = (event) => {
+    setShape(event.target.value);
+  };
 
   const handleLengthChange = (event) => {
     setLength(event.target.value);
@@ -23,18 +28,33 @@ const TankCalculator = () => {
     const tankLength = Number(length);
     const tankWidth = Number(width);
     const tankHeight = Number(height);
-  
-    // Perform the calculation using the rectangular tank formula
-    const calculatedGallons = tankLength * tankWidth * tankHeight / 231; // Divide by 231 to convert cubic inches to gallons
-  
+
+    // Perform the calculation based on the selected tank shape
+    let calculatedGallons = 0;
+
+    if (shape === 'rectangular') {
+      calculatedGallons = tankLength * tankWidth * tankHeight / 231;
+    } else if (shape === 'cylindrical') {
+      calculatedGallons = Math.PI * (tankWidth / 2) * (tankWidth / 2) * tankHeight / 231;
+    } else if (shape === 'conical') {
+      calculatedGallons = (1/3) * Math.PI * (tankWidth / 2) * (tankWidth / 2) * tankHeight / 231;
+    }
+
     // Set the calculated value to the gallons state
     setGallons(calculatedGallons);
   };
-  
 
   return (
     <div>
       <h2>Tank Volume Calculator</h2>
+      <div>
+        <label htmlFor="shape">Tank Shape:</label>
+        <select id="shape" value={shape} onChange={handleShapeChange}>
+          <option value="rectangular">Rectangular</option>
+          <option value="cylindrical">Cylindrical</option>
+          <option value="conical">Conical</option>
+        </select>
+      </div>
       <div>
         <label htmlFor="length">Length (inches):</label>
         <input
