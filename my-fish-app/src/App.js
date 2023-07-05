@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Route } from 'react-router-dom';
-import { Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import FishGallery from './FishGallery';
 import Home from './Home';
 import NavBar from './NavBar';
@@ -30,14 +29,14 @@ function App() {
           <div>
             <NavBar />
             <Switch>
-              <Route exact path="/">
-                <Home /> 
-              </Route>
-              <Route path="/fish-gallery">
+              <Route exact path="/fish-gallery">
                 <FishGallery fishData={fishes} handleLike={handleLike} />
               </Route>
-              <Route path="/tank-calculator">
+              <Route exact path="/tank-calculator">
                 <TankCalculator /> 
+              </Route>
+              <Route exact path="/">
+                <Home /> 
               </Route>
             </Switch>
           </div>
