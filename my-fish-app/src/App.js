@@ -7,6 +7,7 @@ import TankCalculator from './TankCalculator';
 import fishData from './fishData.json';
 import './App.css';
 import Logo from './fishyy.jpg';
+import foot from './coral-reef.jpg'
 
 function App() {
   const [fishes, setFishes] = useState(fishData.fish);
@@ -42,6 +43,9 @@ function App() {
             </Switch>
           </div>
         </header>
+        <footer>
+          <img src={foot} className='Foot-pic' alt='foot pic' />
+        </footer>
       </div>
     </BrowserRouter>
   );
