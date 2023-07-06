@@ -13,6 +13,7 @@ Will allow a user to "login", although this feature does not fully work as login
 ### Contributions
 - Image for header found [here](https://www.pexels.com/photo/close-up-photo-of-clownfish-128756/)
 - Image for footer found [here](https://www.freewebheaders.com/underwater/shells-corals-headers/#google_vignette)
+- Image for icon found [here](https://www.clipartmax.com/middle/m2K9A0d3N4d3H7Z5_download-puffer-fish-clipart/)
 - Local images used were a self taken photo of my own tanks and pond.
 
 - ### License
