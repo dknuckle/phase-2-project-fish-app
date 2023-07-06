@@ -5,8 +5,8 @@ import Home from './Home';
 import NavBar from './NavBar';
 import TankCalculator from './TankCalculator';
 import fishData from './fishData.json';
-import logo from './logo.svg';
 import './App.css';
+import Logo from './fishyy.jpg';
 
 function App() {
   const [fishes, setFishes] = useState(fishData.fish);
@@ -26,7 +26,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={Logo} className="App-logo" alt="logo" />
           <div>
             <NavBar />
             <Switch>
