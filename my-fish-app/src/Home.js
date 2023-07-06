@@ -5,7 +5,7 @@ function Home() {
   const [showLogin, setShowLogin] = useState(false);
 
   return (
-    <div>
+    <div className='home'>
       <h1>Welcome to the Home Page</h1>
       <button onClick={() => setShowLogin(true)}>Login</button>
 

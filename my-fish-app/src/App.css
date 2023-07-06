@@ -155,3 +155,8 @@
   margin-top: 10px;
   font-family: 'Georgia', sans-serif;
 }
+
+.home h1 {
+  text-align: center;
+  font-family: 'Playfair Display', sans-serif;
+}
