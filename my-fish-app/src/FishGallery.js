@@ -2,7 +2,7 @@ import React from 'react';
 
 const FishGallery = ({ fishData, handleLike }) => {
   return (
-    <div>
+    <div className='Gallery-div'>
       <h2>Fish Gallery</h2>
       {fishData.map((fish) => (
         <div key={fish.id}>

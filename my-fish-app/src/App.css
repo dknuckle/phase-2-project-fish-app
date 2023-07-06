@@ -7,10 +7,6 @@
   pointer-events: none;
 }
 
-.Gallery-photos {
-  height: 60vmin;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 50vh;
@@ -62,4 +58,54 @@
   bottom: 0;
   left: 0;
   z-index: -1;
+}
+
+.Gallery-div {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: darkslategray;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.Gallery-div h2 {
+  text-align: center;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.Gallery-div div {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: darkslategrey;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.Gallery-div h3 {
+  margin-top: 0;
+  font-family: 'Georgia', sans-serif;
+}
+
+.Gallery-photos {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.Gallery-div p {
+  margin-bottom: 10px;
+  color: antiquewhite;
+  font-family: 'Georgia', sans-serif;
+}
+
+.Gallery-div button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
 }
