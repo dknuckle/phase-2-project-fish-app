@@ -45,7 +45,7 @@ const TankCalculator = () => {
   };
 
   return (
-    <div>
+    <div className='TankCalculator'>
       <h2>Tank Volume Calculator</h2>
       <div>
         <label htmlFor="shape">Tank Shape:</label>

@@ -67,7 +67,6 @@
   background-color: darkslategray;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .Gallery-div h2 {
@@ -108,4 +107,51 @@
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.TankCalculator {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: darkslategrey;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.TankCalculator h2 {
+  text-align: center;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.TankCalculator div {
+  margin-bottom: 20px;
+}
+
+.TankCalculator label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: 'Georgia', sans-serif;
+}
+
+.TankCalculator select,
+.TankCalculator input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.TankCalculator button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.TankCalculator p {
+  margin-top: 10px;
+  font-family: 'Georgia', sans-serif;
 }
