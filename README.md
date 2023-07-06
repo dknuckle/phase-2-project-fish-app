@@ -16,4 +16,4 @@ Will allow a user to "login", although this feature does not fully work as login
 - Local images used were a self taken photo of my own tanks and pond.
 
 - ### License
-[MIT]()
+[MIT](https://github.com/dknuckle/phase-2-project-fish-app/blob/main/LICENSE)
