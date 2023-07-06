@@ -4,30 +4,35 @@
         "id": 1,
         "name": "square tank",
         "image": "/images/squaree.jpg",
+        "description": "This tank is about 23 gallons. It houses 2 cory catfish and 3 pea puffers.",
         "likes": 1
       },
       {
         "id": 2,
         "name": "long tank",
         "image": "/images/long.png",
+        "description": "55 gallon long tank that houses a couple zebra danios, bueno aries tetras, snails, a black goldfish & pearl gourami.",
         "likes": 1
       },
       {
         "id": 3,
         "name": "corner tank",
         "image": "/images/cornerr.jpg",
+        "description": "55 gallon corner tank that houses a variety of fish like; tiger barbs, a pictus ctafish, rainbow shark & a birchir.",
         "likes": 1
       },
       {
         "id": 4,
         "name": "nano saltwater tank",
         "image": "/images/nano-saltwaterr.jpg",
+        "description": "Small saltwater tank that houses some corals, snails, a starfish and a couple clownfish.",
         "likes": 1
       },
       {
         "id": 5,
         "name": "pond",
         "image": "/images/pondd.jpg",
+        "description": "Outdoor pond that houses one koi fish, 3 turles & a bunch of goldfish.",
         "likes": 1
       }
     ]

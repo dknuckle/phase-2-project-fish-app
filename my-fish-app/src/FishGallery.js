@@ -8,6 +8,7 @@ const FishGallery = ({ fishData, handleLike }) => {
         <div key={fish.id}>
           <h3>{fish.name}</h3>
           <img src={fish.image} className='Gallery-photos' alt={fish.name} />
+          <p>{fish.description}</p>
           <p>Likes: {fish.likes}</p>
           <button onClick={() => handleLike(fish.id)}>Like</button>
         </div>
