@@ -6,7 +6,7 @@ function Home() {
 
   return (
     <div className='home'>
-      <h1>Welcome to the Home Page</h1>
+      <h1>Welcome to the Knuckles' Fish Gallery</h1>
       <button onClick={() => setShowLogin(true)}>Login</button>
 
       {showLogin && (
