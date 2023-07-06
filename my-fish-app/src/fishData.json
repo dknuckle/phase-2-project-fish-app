@@ -3,7 +3,7 @@
       {
         "id": 1,
         "name": "square tank",
-        "image": "/images/square.jpg",
+        "image": "/images/squaree.jpg",
         "likes": 1
       },
       {
@@ -15,19 +15,19 @@
       {
         "id": 3,
         "name": "corner tank",
-        "image": "/images/corner.png",
+        "image": "/images/cornerr.jpg",
         "likes": 1
       },
       {
         "id": 4,
         "name": "nano saltwater tank",
-        "image": "/images/nano-saltwater.png",
+        "image": "/images/nano-saltwaterr.jpg",
         "likes": 1
       },
       {
         "id": 5,
         "name": "pond",
-        "image": "/images/pond.png",
+        "image": "/images/pondd.jpg",
         "likes": 1
       }
     ]
