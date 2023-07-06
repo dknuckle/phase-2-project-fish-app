@@ -7,6 +7,9 @@
   pointer-events: none;
 }
 
+.Gallery-photos {
+  height: 30vmin;
+}
 
 .App-header {
   background-color: #282c34;

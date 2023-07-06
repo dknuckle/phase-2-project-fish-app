@@ -3,7 +3,7 @@
       {
         "id": 1,
         "name": "square tank",
-        "image": "./square.jpg",
+        "image": "square.jpg",
         "likes": 1
       },
       {
